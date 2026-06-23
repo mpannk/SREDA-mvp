@@ -11,7 +11,7 @@ export function AuthInput({ label, className = "", ...props }: AuthInputProps) {
         <label className="text-body-medium-16 text-sreda-black">{label}</label>
       )}
       <input
-        className={`w-full rounded-xl border border-black/10 bg-sreda-white px-4 py-3 text-body-medium-16 text-sreda-black outline-none placeholder:text-sreda-gray-light focus:border-sreda-red ${className}`}
+        className={`h-[45px] w-full rounded-[17px] border-0 bg-sreda-white px-[18px] text-[13px] font-light text-sreda-black outline-none placeholder:text-sreda-gray-caption ${className}`}
         {...props}
       />
     </div>

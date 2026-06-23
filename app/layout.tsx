@@ -3,8 +3,14 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const uncage = localFont({
-  src: "../public/assets/fonts/UNCAGE-Regular.otf",
+  src: "../public/assets/fonts/UNCAGE-Medium.otf",
   variable: "--font-heading",
+  display: "swap",
+});
+
+const uncageRegular = localFont({
+  src: "../public/assets/fonts/UNCAGE-Regular.otf",
+  variable: "--font-heading-regular",
   display: "swap",
 });
 
@@ -48,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body
-        className={`${uncage.variable} ${helveticaLight.variable} ${helveticaMedium.variable}`}
+        className={`${uncage.variable} ${uncageRegular.variable} ${helveticaLight.variable} ${helveticaMedium.variable}`}
       >
         {children}
       </body>
