@@ -92,7 +92,7 @@ export function EventTypesScreen() {
 
         <button
           type="button"
-          onClick={() => router.push("/loading")}
+          onClick={() => router.push("/feed")}
           className="absolute bottom-[40px] left-1/2 z-20 flex h-[58px] w-[226px] -translate-x-1/2 items-center justify-center rounded-full bg-sreda-red text-center text-[16px] text-sreda-white shadow-[0_12px_24px_rgba(228,2,16,0.18)]"
           style={{ fontFamily: "var(--font-body-medium)" }}
         >
